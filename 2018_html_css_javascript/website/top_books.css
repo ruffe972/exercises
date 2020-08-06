@@ -1,0 +1,47 @@
+#content_header {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: center;
+    padding: auto;
+    border-right: 1px solid lightGrey;
+}
+
+th {
+    color: white;
+    background-color: hsl(30, 30%, 30%);
+    font-weight: normal;
+}
+
+tr :last-child {
+    border-right: none;
+}
+
+td.rating {
+    font-size: 2em;
+    color: grey;
+}
+
+.top_books_name_cell {
+    padding: 10px;
+    text-align: left;
+}
+
+.top_books_name_cell img {
+    vertical-align: middle;
+    height: 70px;
+}
+
+.top_books_name_cell a {
+    text-decoration: none;
+    color: hsl(30, 50%, 30%);
+    font-weight: bold;
+}
+

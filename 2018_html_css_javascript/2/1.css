@@ -1,0 +1,26 @@
+body > div {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    width: 4em;
+    border: 1px solid black;
+}
+
+td {
+    text-align: right;
+}
+
+tr:nth-child(odd),
+table.alternative tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(even),
+table.alternative tr:nth-child(odd) {
+    background-color: lightGrey;
+}

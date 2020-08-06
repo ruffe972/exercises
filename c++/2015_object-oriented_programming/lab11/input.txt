@@ -1,0 +1,13 @@
+Excess or missing lines are not allowed!
+
+Number of computers
+2
+
+Connections. Format: two computer indeces
+Computer numeration starts from zero
+0 1
+
+Computers. Format:
+<index>   <infected>  <os name>
+0         1           windows
+1         0           linux

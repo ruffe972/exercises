@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+}
+
+.menu label,
+div.expander {
+    cursor: pointer;
+}
+
+ul.menu {
+    padding-left: 0;
+}
+
+.menu ul {
+    padding-left: 20px;
+    list-style-type: none;
+    overflow: hidden;
+    height: 0;
+}
+
+div#total_price {
+    border-bottom: 1px solid lightGrey;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

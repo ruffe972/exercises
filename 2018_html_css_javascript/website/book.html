@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Книги</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="book.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="about_popup" class="popup_container">
+            <div class="popup_bg">
+            </div>
+            <div class="popup_window">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br/>
+                <button class="fancy_button">OK</button>
+            </div>
+        </div>
+        <div id="header">
+            <img id="header_img" src="res/header.png">
+            <h1>Книжная база данных</h1>
+        </div>
+        <ul class="menu" id="horizontal_menu">
+            <li><a href="top_books.html">Топ книг</a></li>
+            <li><a id="about_link" href="#">О сайте</a></li>
+        </ul>
+        <div id="columns_container">
+            <div id="left_column">
+                <ul class="menu" id="vertical_menu">
+                    <li><a href="book.html">Случайная книга</a></li>
+                    <li><a href="writer.html">Случайный писатель</a></li>
+                </ul>
+                <form id="login_form">
+                    <div>
+                        <label>Логин:</label>
+                        <input type="text" placeholder="Введите логин">
+                    </div>
+                    <div>
+                        <label>Пароль:</label>
+                        <input type="password" placeholder="Введите пароль">
+                    </div>
+                    <button class="fancy_button">Вход</button>
+                    <button class="fancy_button">Регистрация</button>
+                </form>
+            </div>
+            <div id="content">
+                <img id="main_content_picture" src="res/harry_potter_1.jpg">
+                <h2 id="content_header">Гарри Поттер и философский камень</h2>
+                <div class="no_indent_list" id="authors">
+                    Авторы:
+                    <ul>
+                        <li><a href="writer.html">Джоан Роулинг</a></li>,
+                        <li><a href="#" onclick="return false">Второй несуществующий писатель</a></li>
+                    </ul>
+                </div>
+                <div class="no_indent_list">
+                    Жанры:
+                    <ul>
+                        <li>Фантастика</li>,
+                        <li>Детектив</li>
+                    </ul>
+                </div>
+                <h3>Описание</h3>
+                <p>Одиннадцатилетний мальчик-сирота Гарри Поттер живёт в семье своей тётки и даже не подозревает, что он — <i>настоящий волшебник</i>. Но однажды прилетает сова с письмом для него, и жизнь Гарри Поттера изменяется навсегда. Он узнаёт, что зачислен в Школу чародейства и волшебства, выясняет правду о загадочной смерти своих родителей, а в результате ему удаётся раскрыть секрет философского камня. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <div id="banner_column">
+                <img src="res/banner.jpg">
+            </div>
+        </div>
+        <div id="footer">
+            Ершов Иван Николаевич, 3БПМИ<br>
+            Веб-программирование
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

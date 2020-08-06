@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Книги</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="writer.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="about_popup" class="popup_container">
+            <div class="popup_bg">
+            </div>
+            <div class="popup_window">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br/>
+                <button class="fancy_button">OK</button>
+            </div>
+        </div>
+        <div id="header">
+            <img id="header_img" src="res/header.png">
+            <h1>Книжная база данных</h1>
+        </div>
+        <ul class="menu" id="horizontal_menu">
+            <li><a href="top_books.html">Топ книг</a></li>
+            <li><a id="about_link" href="#">О сайте</a></li>
+        </ul>
+        <div id="columns_container">
+            <div id="left_column">
+                <ul class="menu" id="vertical_menu">
+                    <li><a href="book.html">Случайная книга</a></li>
+                    <li><a href="writer.html">Случайный писатель</a></li>
+                </ul>
+                <form id="login_form">
+                    <div>
+                        <label>Логин:</label>
+                        <input type="text"placeholder="Введите логин">
+                    </div>
+                    <div>
+                        <label>Пароль:</label>
+                        <input type="password" placeholder="Введите пароль">
+                    </div>
+                    <button class="fancy_button">Вход</button>
+                    <button class="fancy_button">Регистрация</button>
+                </form>
+            </div>
+            <div id="content">
+                <img id="main_content_picture" src="res/rowling.jpg">
+                <h2 id="content_header">Джоан Роулинг</h2>
+                <p>Дата рождения: 1965</p>
+                <p>Гражданство: Великобритания</p>
+                <p>Годы творчества: 1997 - наши дни</p>
+                <h3>Биография</h3>
+                <p>Английская писательница Джоан Роулинг (Joanne Rowling) родилась 31 июля 1965 года в городе Йейт Англии. Ее отец работал на заводе в Бристоле. Семья переезжала сначала в Винтерборн, затем в деревню Татшилл. Стать писательницей Джоан решила еще в шестилетнем возрасте, когда сочинила первую сказку о кролике по имени Кролик. После окончания школы Роулинг пыталась поступить в Оксфорд, но в итоге стала студенткой филологического факультета в Эксетерском университете. Кроме французского языка Роулинг изучала в университете древнегреческую и древнеримскую литературу.</p>
+            </div>
+            <div id="banner_column">
+                <img src="res/banner.jpg">
+            </div>
+        </div>
+        <div id="footer">
+            Ершов Иван Николаевич, 3БПМИ<br>
+            Веб-программирование
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

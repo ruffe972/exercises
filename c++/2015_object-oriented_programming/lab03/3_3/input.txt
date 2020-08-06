@@ -1,0 +1,18 @@
+length
+remove 0 0 0
+add 1 1 2
+add 1 1 3
+print
+length
+add -1 -1 -1 -1
+print
+add 0
+print
+length
+remove 0 0 0
+print
+length
+add 51
+remove 666
+print
+remove 0 0 0 0

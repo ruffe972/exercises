@@ -1,0 +1,29 @@
+#authors {
+    margin-top: 0.3em;
+    color: dimGrey;
+}
+
+#authors a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#authors a:hover {
+    text-decoration: underline;
+}
+
+div.no_indent_list {
+    margin: 1em 0;
+}
+
+div.no_indent_list ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.no_indent_list li {
+    display: inline-block;
+}
+

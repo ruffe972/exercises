@@ -1,0 +1,12 @@
+p {
+    min-height: 1em;
+}
+
+p:nth-of-type(odd) {
+    background-color: lightGrey;
+}
+
+img {
+    display: block;
+}
+

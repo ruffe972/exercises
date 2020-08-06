@@ -1,0 +1,9 @@
+[package]
+name = "sea_fight"
+version = "0.1.0"
+authors = ["Ivan Ershov <ivanershov51@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+itertools = "0.8.0"

@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    max-width: 21cm;  /* A4 */
+    padding: 1em;
+    margin: 0 auto;
+}
+
+pre {
+    background-color: hsl(0, 0%, 95%);
+    padding: 1em;
+}
+
+/* Table */
+
+table {
+    border-spacing: 0;
+    margin: 2em 0;
+}
+
+td,
+th {
+    text-align: left;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    padding: 0.3em;
+}
+
+td+td,
+th+th {
+    padding-left: 3em;
+}

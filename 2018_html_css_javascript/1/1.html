@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <button onclick="onAddButtonClick()">Сложить числа</button>
+        <script>
+            "use strict"
+            
+            function onAddButtonClick() {                               
+                var firstNumber = getNumber("Введите первое число");
+                var secondNumber = getNumber("Введите второе число");
+                var output = String(firstNumber) + " + " + String(secondNumber) + " = " + String(firstNumber + secondNumber)
+                alert(output);
+            }
+            
+            function getNumber(promptText) {
+                return parseInt(prompt(promptText));
+            }
+        </script>
+    </body>
+</html>

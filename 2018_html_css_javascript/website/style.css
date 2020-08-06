@@ -1,0 +1,247 @@
+/* General */
+
+body {
+    width: 1024px;
+    margin: auto;
+    background: linear-gradient(to bottom, hsl(30, 30%, 80%), hsl(30, 30%, 100%));
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+div#footer {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+.fancy_button {
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(to bottom, hsl(30, 30%, 40%), hsl(30, 25%, 30%));
+    border: none;
+    padding: 0.3em 0;
+    border-radius: 0.5em;
+}
+
+.fancy_button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(30, 55%, 45%), hsl(30, 50%, 35%));
+}
+
+.fancy_button:focus {
+    outline: 0;
+}
+
+/* Website header */
+
+div#header {
+    position: relative;
+    text-align: center;
+}
+
+#header_img {
+    display: block;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+#header h1 {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40pt;
+}
+
+/* Common menus style */
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Horizontal menu */
+
+ul#horizontal_menu {
+    background-color: hsl(0, 0%, 20%);
+    overflow: hidden;
+}
+
+#horizontal_menu li {
+    float: left;
+}
+
+#horizontal_menu li a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#horizontal_menu li a:hover {
+    background-color: black
+}
+
+#current_horizontal_menu_item {
+    background-color: hsl(30, 60%, 40%);
+}
+
+/* Vertical menu */
+
+#vertical_menu li a {
+    color: black;
+    padding: 10px;
+}
+
+#vertical_menu li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+/* Content */
+
+p:first-of-type {
+    margin-top: 0.5em;
+}
+
+p {
+    text-align: justify;
+}
+
+#content > p:last-child {
+    margin-bottom: 0;
+}
+
+div#columns_container {
+    display: flex;
+}
+
+div#content {
+    background-color: white;
+    padding: 10px;
+    flex: 1;
+}
+
+#content_header {
+    margin-top: 0;
+}
+
+#main_content_picture {
+    float: left;
+    height: 260px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Left and right columns */
+
+div#left_column {
+    flex-shrink: 0;
+    flex-basis: 11em;
+    background-color: lightGrey;
+}
+
+div#banner_column {
+    background-color: lightGrey;
+}
+
+#banner_column img {
+    display: block;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* Login form */
+
+#login_form {
+    padding: 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#login_form,
+#login_form * {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#login_form > * {
+    margin-bottom: 10px;
+}
+
+#login_form label {
+    margin-bottom: 0.1em;
+}
+
+#login_form > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Popup window */
+
+.popup_container {
+    display: none;  /* changed to flex */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.popup_bg {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup_window {
+    position: absolute;
+    border-radius: 4px;
+    width: 30em;
+    background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 90%));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    padding: 10px;
+
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+
+    -webkit-transition: 400ms ease-in-out;
+    -moz-transition: 400ms ease-in-out;
+    transition: 400ms ease-in-out;
+}
+
+.popup_window.appearing {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.popup_window button {
+    margin: auto;
+    margin-top: 10px;
+    min-width: 80px;
+}

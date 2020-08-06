@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Food</title>
+        <link rel="stylesheet" href="4.css"/>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="total_price">Итого: 10 р.</div>
+        <ul class="menu unselectable">
+            <li>
+                <div class="expander">Первое</div>
+                <ul>
+                    <li>
+                        <label>
+                            <input id="borscht" class="expander" type="checkbox"/>
+                            Борщ
+                        </label>
+                        <ul>
+                            <li><label>
+                                    <input id="sour_cream_for_borscht" type="checkbox">
+                                    Со сметаной
+                            </label></li>
+                            <li><label>
+                                    <input id="dill_for_borscht" type="checkbox">
+                                    С укропом
+                            </label></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label>
+                            <input id="solyanka" class="expander" type="checkbox"/>
+                            Солянка
+                        </label>
+                        <ul>
+                            <li><label>
+                                    <input id="lemon_for_solyanka" type="checkbox">
+                                    С лимоном
+                            </label></li>
+                            <li><label>
+                                    <input id="olives_for_solyanka" type="checkbox">
+                                    С маслинами
+                            </label></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="expander">Второе</div>
+                <ul>
+                    <li><label>
+                            <input id="noodles" type="checkbox">
+                            Лапша
+                    </label></li>
+                    <li><label>
+                            <input id="hamburger" type="checkbox">
+                            Гамбургер
+                    </label></li>
+                </ul>
+            </li>
+        </ul>
+        <script src="4.js"></script>
+    </body>
+</html>

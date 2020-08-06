@@ -1,0 +1,13 @@
+*.pro.user
+*.pri
+*.a
+*.o
+*.exe
+Makefile
+*.Debug
+*.Release
+*.autosave
+output.txt
+moc_*.cpp
+ui_*.h
+build-*/
