@@ -1,3 +1,4 @@
+В этом репозитории содержится большая часть кода из домашних заданий для университета.
 Самые полезные и сложные задачи (условия задач прилагаются):
 * [c++/2014_imperative_programming](c++/2014_imperative_programming)
 * [c++/2015_object-oriented_programming](c++/2015_object-oriented_programming)
