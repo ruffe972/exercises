@@ -1,35 +1,31 @@
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 
+// Challenge 1, no constructors
+@Getter
+@Setter
 public class BankAccount {
-    private static final String NEGATIVE_FUNDS_ERROR = "Funds should be > 0.";
+    private static final String NEGATIVE_FUNDS_ERROR_MESSAGE = "Funds should be > 0.";
     private static final String SUCCESS_MESSAGE = "Success.";
 
-    @Getter
-    @Setter
-    int number;
+    private double balance;
 
-    @Getter
-    @Setter
-    double balance;
+    // Non-null
+    private String number = "";
 
-    @Getter
-    @Setter
-    @NonNull String name = "";
+    // Non-null
+    private String customerName = "";
 
-    @Getter
-    @Setter
-    @NonNull String eMail = "";
+    // Non-null
+    private String customerEMail = "";
 
-    @Getter
-    @Setter
-    @NonNull String phoneNumber = "";
+    // Non-null
+    private String customerPhoneNumber = "";
 
     public void depositFunds(double funds) {
         var message = "";
         if (funds <= 0) {
-            message = NEGATIVE_FUNDS_ERROR;
+            message = NEGATIVE_FUNDS_ERROR_MESSAGE;
         } else {
             balance += funds;
             message = SUCCESS_MESSAGE;
@@ -40,7 +36,7 @@ public class BankAccount {
     public void withdrawFunds(double funds) {
         var message = "";
         if (funds <= 0) {
-            message = NEGATIVE_FUNDS_ERROR;
+            message = NEGATIVE_FUNDS_ERROR_MESSAGE;
         } else if (balance - funds < 0) {
             message = "Not enough money.";
         } else {
