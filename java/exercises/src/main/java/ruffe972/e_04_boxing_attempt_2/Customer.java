@@ -1,4 +1,4 @@
-package e_04_boxing_attempt_2;
+package ruffe972.e_04_boxing_attempt_2;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,12 +1,8 @@
-package ruffe972.e_05_shapes_inheritance;
+package ruffe972.e_05_shapes;
 
 /** Immutable */
 abstract class Shape {
     private final String color;
-
-    public final String getColor() {
-        return color;
-    }
 
     @Override
     public String toString() {

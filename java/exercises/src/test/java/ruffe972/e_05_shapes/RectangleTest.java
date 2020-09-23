@@ -1,4 +1,4 @@
-package ruffe972.e_05_shapes_inheritance;
+package ruffe972.e_05_shapes;
 
 import org.junit.jupiter.api.Test;
 
@@ -26,27 +26,20 @@ class RectangleTest {
 
     @Test
     void testColorlessStringRepresentation() {
-        testToString(
-                "Rectangle (colorless; width: 2.50; height: 2.00)",
-                new Rectangle("", 2.5, 2));
-    }
-
-    static private void testToString(String expected, Rectangle rectangle) {
-        assertEquals(expected, rectangle.toString());
+        String actual = new Rectangle("", 2.5, 2).toString();
+        assertEquals("Rectangle (colorless; width: 2.50; height: 2.00)", actual);
     }
 
     @Test
     void testColorStringRepresentation() {
-        testToString(
-                "Rectangle (color: blue; width: 1.00; height: 1.00)",
-                new Rectangle("blue", 1, 1));
+        String actual = new Rectangle("blue", 1, 1).toString();
+        assertEquals("Rectangle (color: blue; width: 1.00; height: 1.00)", actual);
     }
 
     @Test
     void testToStringForLongFractions() {
-        testToString(
-                "Rectangle (colorless; width: 1.49; height: 1.50)",
-                new Rectangle("", 1.49499, 1.494999999999999999));
+        String actual = new Rectangle("", 1.49499, 1.494999999999999999).toString();
+        assertEquals("Rectangle (colorless; width: 1.49; height: 1.50)", actual);
     }
 
     @Test
@@ -61,4 +54,15 @@ class RectangleTest {
         assertThrows(IllegalArgumentException.class, () -> new Rectangle("", 1, 0));
     }
 
+    @Test
+    void testNoColorToString() {
+        String actual = new Rectangle("", 1, 1).colorToString();
+        assertEquals("colorless", actual);
+    }
+
+    @Test
+    void testRedColorToString() {
+        String actual = new Rectangle("red", 1, 1).colorToString();
+        assertEquals("color: red", actual);
+    }
 }

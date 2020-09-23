@@ -1,7 +1,8 @@
-package ruffe972.e_05_shapes_inheritance;
+package ruffe972.e_05_shapes;
 
 /** Immutable */
 class Rectangle extends Shape {
+
     private final double width;
     private final double height;
 
@@ -23,5 +24,13 @@ class Rectangle extends Shape {
     @Override
     public String toString() {
         return String.format("Rectangle (%s; width: %.2f; height: %.2f)", colorToString(), width, height);
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
     }
 }

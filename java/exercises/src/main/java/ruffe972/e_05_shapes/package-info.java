@@ -1,6 +1,6 @@
 @NonNullApi
 @NonNullFields
-package ruffe972.e_04_boxing_attempt_2;
+package ruffe972.e_05_shapes;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

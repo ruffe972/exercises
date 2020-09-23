@@ -1,4 +1,4 @@
-package e_03_boxing_attempt_1;
+package ruffe972.e_03_boxing_attempt_1;
 
 class Main {
     public static void main(String[] args) {

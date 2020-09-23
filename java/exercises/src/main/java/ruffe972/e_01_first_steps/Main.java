@@ -1,4 +1,4 @@
-package e_01_first_steps;
+package ruffe972.e_01_first_steps;
 
 import java.util.Scanner;
 
