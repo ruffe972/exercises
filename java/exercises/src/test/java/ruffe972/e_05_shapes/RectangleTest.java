@@ -25,13 +25,7 @@ class RectangleTest {
     }
 
     @Test
-    void testColorlessStringRepresentation() {
-        String actual = new Rectangle("", 2.5, 2).toString();
-        assertEquals("Rectangle (colorless; width: 2.50; height: 2.00)", actual);
-    }
-
-    @Test
-    void testColorStringRepresentation() {
+    void testToString() {
         String actual = new Rectangle("blue", 1, 1).toString();
         assertEquals("Rectangle (color: blue; width: 1.00; height: 1.00)", actual);
     }
@@ -52,17 +46,5 @@ class RectangleTest {
     void given_ZeroDimension_expect_illegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () -> new Rectangle("", 0, 1));
         assertThrows(IllegalArgumentException.class, () -> new Rectangle("", 1, 0));
-    }
-
-    @Test
-    void testNoColorToString() {
-        String actual = new Rectangle("", 1, 1).colorToString();
-        assertEquals("colorless", actual);
-    }
-
-    @Test
-    void testRedColorToString() {
-        String actual = new Rectangle("red", 1, 1).colorToString();
-        assertEquals("color: red", actual);
     }
 }

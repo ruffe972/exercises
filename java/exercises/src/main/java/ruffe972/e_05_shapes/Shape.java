@@ -6,7 +6,7 @@ abstract class Shape {
 
     @Override
     public String toString() {
-        return String.format("Shape (%s)", colorToString());
+        return String.format("Shape (%s; area: %.2f)", colorToString(), getArea());
     }
 
     public abstract double getArea();
